@@ -37,7 +37,7 @@ namespace Shared.PipelineComponents.ContextRegExMatch.Tests
         }
 
         [TestMethod]
-        [ExpectedException(typeof(ArgumentException))]
+        [ExpectedException(typeof(ArgumentNullException))]
         public void TestMissingPropertyToMatch()
         {
             const string contextNamespaceToSet = "http://acmeset.com/prop#test";
