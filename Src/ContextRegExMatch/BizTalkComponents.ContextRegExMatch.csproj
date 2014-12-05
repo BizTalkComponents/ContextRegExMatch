@@ -42,12 +42,16 @@
     <AssemblyOriginatorKeyFile>BizTalkComponents.ContextRegExMatch.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BizTalkComponents.Utils">
+      <HintPath>..\..\packages\BizTalkComponents.Utils.2.1.0.3\lib\net40\BizTalkComponents.Utils.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.BizTalk.Pipeline, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\..\Program Files (x86)\Microsoft BizTalk Server 2013\Microsoft.BizTalk.Pipeline.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.BizTalk.Streaming, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -60,6 +64,8 @@
     <Compile Include="BiztalkComponents.Utils\ContextProperties.cs" />
     <Compile Include="BiztalkComponents.Utils\ContextProperty.cs" />
     <Compile Include="BiztalkComponents.Utils\PropertyBagHelper.cs" />
+    <Compile Include="BiztalkComponents.Utils\RequiredRuntimeAttribute.cs" />
+    <Compile Include="BiztalkComponents.Utils\ValidationHelper.cs" />
     <Compile Include="PipelineProperty.cs" />
     <Compile Include="RegExMatch.cs" />
     <Compile Include="RegExMatchComponent.cs" />

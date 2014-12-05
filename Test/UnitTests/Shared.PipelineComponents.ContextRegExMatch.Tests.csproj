@@ -46,8 +46,9 @@
       <HintPath>..\..\..\..\..\..\Program Files (x86)\Microsoft BizTalk Server 2013\Microsoft.BizTalk.Pipeline.dll</HintPath>
     </Reference>
     <Reference Include="System" />
-    <Reference Include="Winterdom.BizTalk.PipelineTesting">
-      <HintPath>..\..\packages\Winterdom.BizTalk.PipelineTesting.1.2.1.3\lib\net45\Winterdom.BizTalk.PipelineTesting.dll</HintPath>
+    <Reference Include="Winterdom.BizTalk.PipelineTesting, Version=1.1.0.0, Culture=neutral, PublicKeyToken=8671935c07812470, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\Winterdom.BizTalk.PipelineTesting.1.2.1.0\lib\net45\Winterdom.BizTalk.PipelineTesting.dll</HintPath>
     </Reference>
   </ItemGroup>
   <Choose>
