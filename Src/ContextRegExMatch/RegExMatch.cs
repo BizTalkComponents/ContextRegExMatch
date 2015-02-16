@@ -14,7 +14,7 @@ namespace BizTalkComponents.PipelineComponents.ContextRegExMatch
     [ComponentCategory(CategoryTypes.CATID_Receiver)]
     [Guid("E0105181-E664-4770-B20B-6EB5AF77DBA0")]
 
-    public partial class RegExMatchComponent : IBaseComponent, Microsoft.BizTalk.Component.Interop.IComponent, IComponentUI, IPersistPropertyBag
+    public partial class RegExMatch: IBaseComponent, Microsoft.BizTalk.Component.Interop.IComponent, IComponentUI, IPersistPropertyBag
     {
         [RequiredRuntime]
         [DisplayName("Pattern To Match")]

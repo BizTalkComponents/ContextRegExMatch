@@ -2,7 +2,7 @@
 
 namespace BizTalkComponents.PipelineComponents.ContextRegExMatch
 {
-    public partial class RegExMatchComponent
+    public partial class RegExMatch
     {
         public string Name { get { return "Context RegEx Match Component"; } }
         public string Version { get { return "0.1"; } }
