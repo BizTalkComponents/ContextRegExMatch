@@ -1,12 +1,11 @@
 ﻿using System;
 using System.IO;
-using BizTalkComponents.ContextRegExMatch;
 using Microsoft.BizTalk.Component.Interop;
 using Microsoft.BizTalk.Message.Interop;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Winterdom.BizTalk.PipelineTesting;
 
-namespace Shared.PipelineComponents.ContextRegExMatch.Tests
+namespace BizTalkComponents.PipelineComponents.ContextRegExMatch.Tests.UnitTests
 {
     [TestClass]
     public class ContextRegExMatchTest
@@ -22,12 +21,12 @@ namespace Shared.PipelineComponents.ContextRegExMatch.Tests
 
             SendPipelineWrapper sendPipeline = PipelineFactory.CreateEmptySendPipeline();
 
-            IBaseComponent component = new RegExMatchComponent();
+            IBaseComponent component = new RegExMatch();
 
-            ((RegExMatchComponent)component).ContextNamespaceToSet = contextNamespaceToSet;
-            ((RegExMatchComponent)component).ContextNamespaceToMatch = contextNamespaceToMatch;
-            ((RegExMatchComponent)component).PatternToMatch = "^.{0}75";
-            ((RegExMatchComponent)component).ValueToSet = "OK";
+            ((RegExMatch)component).ContextNamespaceToSet = contextNamespaceToSet;
+            ((RegExMatch)component).ContextNamespaceToMatch = contextNamespaceToMatch;
+            ((RegExMatch)component).PatternToMatch = "^.{0}75";
+            ((RegExMatch)component).ValueToSet = "OK";
 
             sendPipeline.AddComponent(component, PipelineStage.Encode);
 
@@ -48,12 +47,12 @@ namespace Shared.PipelineComponents.ContextRegExMatch.Tests
 
             SendPipelineWrapper sendPipeline = PipelineFactory.CreateEmptySendPipeline();
 
-            IBaseComponent component = new RegExMatchComponent();
+            IBaseComponent component = new RegExMatch();
 
-            ((RegExMatchComponent)component).ContextNamespaceToSet = contextNamespaceToSet;
+            ((RegExMatch)component).ContextNamespaceToSet = contextNamespaceToSet;
             //((RegExMatchComponent)component).ContextNamespaceToMatch = contextNamespaceToMatch;
-            ((RegExMatchComponent)component).PatternToMatch = "^.{0}75";
-            ((RegExMatchComponent)component).ValueToSet = "OK";
+            ((RegExMatch)component).PatternToMatch = "^.{0}75";
+            ((RegExMatch)component).ValueToSet = "OK";
 
             sendPipeline.AddComponent(component, PipelineStage.Encode);
 
@@ -74,18 +73,18 @@ namespace Shared.PipelineComponents.ContextRegExMatch.Tests
 
             SendPipelineWrapper sendPipeline = PipelineFactory.CreateEmptySendPipeline();
 
-            IBaseComponent firstComponent = new RegExMatchComponent();
-            IBaseComponent secondComponent = new RegExMatchComponent();
+            IBaseComponent firstComponent = new RegExMatch();
+            IBaseComponent secondComponent = new RegExMatch();
 
-            ((RegExMatchComponent)firstComponent).ContextNamespaceToSet = firstContextNamespaceToSet;
-            ((RegExMatchComponent)firstComponent).ContextNamespaceToMatch = contextNamespaceToMatch;
-            ((RegExMatchComponent)firstComponent).PatternToMatch = "^.{2}23";
-            ((RegExMatchComponent)firstComponent).ValueToSet = "OK1";
+            ((RegExMatch)firstComponent).ContextNamespaceToSet = firstContextNamespaceToSet;
+            ((RegExMatch)firstComponent).ContextNamespaceToMatch = contextNamespaceToMatch;
+            ((RegExMatch)firstComponent).PatternToMatch = "^.{2}23";
+            ((RegExMatch)firstComponent).ValueToSet = "OK1";
 
-            ((RegExMatchComponent)secondComponent).ContextNamespaceToSet = secondContextNamespaceToSet;
-            ((RegExMatchComponent)secondComponent).ContextNamespaceToMatch = contextNamespaceToMatch;
-            ((RegExMatchComponent)secondComponent).PatternToMatch = "^.{4}68";
-            ((RegExMatchComponent)secondComponent).ValueToSet = "OK2";
+            ((RegExMatch)secondComponent).ContextNamespaceToSet = secondContextNamespaceToSet;
+            ((RegExMatch)secondComponent).ContextNamespaceToMatch = contextNamespaceToMatch;
+            ((RegExMatch)secondComponent).PatternToMatch = "^.{4}68";
+            ((RegExMatch)secondComponent).ValueToSet = "OK2";
 
             sendPipeline.AddComponent(firstComponent, PipelineStage.Encode);
             sendPipeline.AddComponent(secondComponent, PipelineStage.Encode);
@@ -107,11 +106,11 @@ namespace Shared.PipelineComponents.ContextRegExMatch.Tests
 
             SendPipelineWrapper sendPipeline = PipelineFactory.CreateEmptySendPipeline();
 
-            IBaseComponent component = new RegExMatchComponent();
-            ((RegExMatchComponent)component).ContextNamespaceToSet = contextNamespaceToSet;
-            ((RegExMatchComponent)component).ContextNamespaceToMatch = contextNamespaceToMatch;
-            ((RegExMatchComponent)component).PatternToMatch = "^.{2}75";
-            ((RegExMatchComponent)component).ValueToSet = "OK";
+            IBaseComponent component = new RegExMatch();
+            ((RegExMatch)component).ContextNamespaceToSet = contextNamespaceToSet;
+            ((RegExMatch)component).ContextNamespaceToMatch = contextNamespaceToMatch;
+            ((RegExMatch)component).PatternToMatch = "^.{2}75";
+            ((RegExMatch)component).ValueToSet = "OK";
 
             sendPipeline.AddComponent(component, PipelineStage.Encode);
 

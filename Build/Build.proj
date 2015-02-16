@@ -5,7 +5,7 @@
 		<ApplicationName>BizTalkComponents.PipelineComponents.ContextRegExMatch</ApplicationName>
 	</PropertyGroup>
 	<ItemGroup>
-		<Resource Include="..\Src\ContextRegExMatch\bin\Debug\BizTalkComponents.ContextRegExMatch.dll" />
+		<Resource Include="..\Src\ContextRegExMatch\bin\Debug\BizTalkComponents.PipelineComponents.ContextRegExMatch.dll" />
 	</ItemGroup>
 		
 	<Target Name="GenerateMsi">

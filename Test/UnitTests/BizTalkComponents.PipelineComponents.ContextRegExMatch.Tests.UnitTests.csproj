@@ -6,8 +6,8 @@
     <ProjectGuid>{79ED17A2-14EB-4C11-8F6A-A805535F26F2}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Shared.PipelineComponents.ContextRegExMatch.Tests</RootNamespace>
-    <AssemblyName>Shared.PipelineComponents.ContextRegExMatch.Tests</AssemblyName>
+    <RootNamespace>BizTalkComponents.PipelineComponents.ContextRegExMatch.Tests.UnitTests</RootNamespace>
+    <AssemblyName>BizTalkComponents.PipelineComponents.ContextRegExMatch.Tests.UnitTests</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -46,8 +46,7 @@
       <HintPath>..\..\..\..\..\..\Program Files (x86)\Microsoft BizTalk Server 2013\Microsoft.BizTalk.Pipeline.dll</HintPath>
     </Reference>
     <Reference Include="System" />
-    <Reference Include="Winterdom.BizTalk.PipelineTesting, Version=1.1.0.0, Culture=neutral, PublicKeyToken=8671935c07812470, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="Winterdom.BizTalk.PipelineTesting">
       <HintPath>..\..\packages\Winterdom.BizTalk.PipelineTesting.1.2.1.0\lib\net45\Winterdom.BizTalk.PipelineTesting.dll</HintPath>
     </Reference>
   </ItemGroup>
@@ -68,13 +67,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Src\ContextRegExMatch\BizTalkComponents.ContextRegExMatch.csproj">
-      <Project>{5e8f17bf-3004-4450-84c0-4de9ef7ec307}</Project>
-      <Name>BizTalkComponents.ContextRegExMatch</Name>
-    </ProjectReference>
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <ProjectReference Include="..\..\Src\ContextRegExMatch\BizTalkComponents.PipelineComponents.ContextRegExMatch.csproj">
+      <Project>{5e8f17bf-3004-4450-84c0-4de9ef7ec307}</Project>
+      <Name>BizTalkComponents.PipelineComponents.ContextRegExMatch</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

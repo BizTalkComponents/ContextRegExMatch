@@ -7,9 +7,9 @@
     <ProjectGuid>{5E8F17BF-3004-4450-84C0-4DE9EF7EC307}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BizTalkComponents.ContextRegExMatch</RootNamespace>
-    <AssemblyName>BizTalkComponents.ContextRegExMatch</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <RootNamespace>BizTalkComponents.PipelineComponents.ContextRegExMatch</RootNamespace>
+    <AssemblyName>BizTalkComponents.PipelineComponents.ContextRegExMatch</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SccProjectName>SAK</SccProjectName>
     <SccLocalPath>SAK</SccLocalPath>
@@ -17,6 +17,7 @@
     <SccProvider>SAK</SccProvider>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\..\</SolutionDir>
     <RestorePackages>true</RestorePackages>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -39,12 +40,9 @@
     <SignAssembly>true</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
-    <AssemblyOriginatorKeyFile>BizTalkComponents.ContextRegExMatch.snk</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>BizTalkComponents.PipelineComponents.ContextRegExMatch.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="BizTalkComponents.Utils">
-      <HintPath>..\..\packages\BizTalkComponents.Utils.2.1.0.3\lib\net40\BizTalkComponents.Utils.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.BizTalk.Pipeline, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\..\Program Files (x86)\Microsoft BizTalk Server 2013\Microsoft.BizTalk.Pipeline.dll</HintPath>
@@ -67,11 +65,11 @@
     <Compile Include="BiztalkComponents.Utils\RequiredRuntimeAttribute.cs" />
     <Compile Include="BiztalkComponents.Utils\ValidationHelper.cs" />
     <Compile Include="RegExMatch.cs" />
-    <Compile Include="RegExMatchComponent.cs" />
+    <Compile Include="RegExMatch.Component.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="BizTalkComponents.ContextRegExMatch.snk" />
+    <None Include="BizTalkComponents.PipelineComponents.ContextRegExMatch.snk" />
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

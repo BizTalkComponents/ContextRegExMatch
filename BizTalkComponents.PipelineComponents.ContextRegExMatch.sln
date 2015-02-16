@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BizTalkComponents.ContextRegExMatch", "Src\ContextRegExMatch\BizTalkComponents.ContextRegExMatch.csproj", "{5E8F17BF-3004-4450-84C0-4DE9EF7EC307}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BizTalkComponents.PipelineComponents.ContextRegExMatch", "Src\ContextRegExMatch\BizTalkComponents.PipelineComponents.ContextRegExMatch.csproj", "{5E8F17BF-3004-4450-84C0-4DE9EF7EC307}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared.PipelineComponents.ContextRegExMatch.Tests", "Test\UnitTests\Shared.PipelineComponents.ContextRegExMatch.Tests.csproj", "{79ED17A2-14EB-4C11-8F6A-A805535F26F2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BizTalkComponents.PipelineComponents.ContextRegExMatch.Tests.UnitTests", "Test\UnitTests\BizTalkComponents.PipelineComponents.ContextRegExMatch.Tests.UnitTests.csproj", "{79ED17A2-14EB-4C11-8F6A-A805535F26F2}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{3B0D46C7-44A5-472D-B7F7-03A32DCD0B4A}"
 	ProjectSection(SolutionItems) = preProject
