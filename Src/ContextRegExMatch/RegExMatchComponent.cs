@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace BizTalkComponents.ContextRegExMatch
+namespace BizTalkComponents.PipelineComponents.ContextRegExMatch
 {
     public partial class RegExMatchComponent
     {

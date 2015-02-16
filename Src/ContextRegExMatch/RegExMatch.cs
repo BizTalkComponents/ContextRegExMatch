@@ -8,7 +8,7 @@ using Microsoft.BizTalk.Component.Interop;
 using Microsoft.BizTalk.Message.Interop;
 using Microsoft.BizTalk.Streaming;
 
-namespace BizTalkComponents.ContextRegExMatch
+namespace BizTalkComponents.PipelineComponents.ContextRegExMatch
 {
     [ComponentCategory(CategoryTypes.CATID_PipelineComponent)]
     [ComponentCategory(CategoryTypes.CATID_Receiver)]

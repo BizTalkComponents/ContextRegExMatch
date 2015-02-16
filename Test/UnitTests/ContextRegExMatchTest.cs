@@ -1,12 +1,11 @@
 ﻿using System;
 using System.IO;
-using BizTalkComponents.ContextRegExMatch;
 using Microsoft.BizTalk.Component.Interop;
 using Microsoft.BizTalk.Message.Interop;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Winterdom.BizTalk.PipelineTesting;
 
-namespace Shared.PipelineComponents.ContextRegExMatch.Tests
+namespace BizTalkComponents.PipelineComponents.ContextRegExMatch.Tests.UnitTests
 {
     [TestClass]
     public class ContextRegExMatchTest
