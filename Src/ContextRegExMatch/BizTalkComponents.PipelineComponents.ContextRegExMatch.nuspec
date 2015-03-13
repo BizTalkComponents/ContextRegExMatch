@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>BizTalkComponents.PipelineComponents.ContextRegExMatch</id>
+    <version>$version$</version>
+    <authors>Richard Hallgren</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectUrl>https://github.com/BizTalkComponents/ContextRegExMatch</projectUrl>
+    <description>Set a context value if a pattern is matched in the selected context</description>
+    <releaseNotes>Initial release.</releaseNotes>
+    <copyright>Copyright 2014</copyright>
+    <tags>BizTalk</tags>
+  </metadata>
+</package>
