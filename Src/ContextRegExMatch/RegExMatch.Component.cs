@@ -5,7 +5,7 @@ namespace BizTalkComponents.PipelineComponents.ContextRegExMatch
     public partial class RegExMatch
     {
         public string Name { get { return "Context RegEx Match Component"; } }
-        public string Version { get { return "0.1"; } }
+        public string Version { get { return "0.2"; } }
         public string Description { get { return @"Set a context value if a pattern is matched in the selected context"; } }
 
         public void GetClassID(out Guid classid)
