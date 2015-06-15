@@ -45,7 +45,7 @@ namespace BizTalkComponents.PipelineComponents.ContextRegExMatch
             PatternToMatch = PropertyBagHelper.ToStringOrDefault(PropertyBagHelper.ReadPropertyBag(propertyBag, PatternToMatchPropertyId), string.Empty);
             ValueToSet = PropertyBagHelper.ToStringOrDefault(PropertyBagHelper.ReadPropertyBag(propertyBag, ValueToSetPropertyId), string.Empty);
             ContextNamespaceToMatch = PropertyBagHelper.ToStringOrDefault(PropertyBagHelper.ReadPropertyBag(propertyBag, ContextNamespaceToMatchPropertyId), string.Empty);
-            ContextNamespaceToSet = PropertyBagHelper.ToStringOrDefault(PropertyBagHelper.ReadPropertyBag(propertyBag, ContextNamespaceToMatchPropertyId), string.Empty);
+            ContextNamespaceToSet = PropertyBagHelper.ToStringOrDefault(PropertyBagHelper.ReadPropertyBag(propertyBag, ContextNamespaceToSetPropertyId), string.Empty);
         }
 
         public void Save(IPropertyBag propertyBag, bool clearDirty, bool saveAllProperties)
