@@ -8,7 +8,6 @@ The component is useful when receiving a message with a promoted value in its co
 | Parameter               | Description                                                                                                                   | Type | Validation|
 | ------------------------|-------------------------------------------------------------------------------------------------------------------------------|------|-----------|
 |Pattern To Match|The RegEx pattern used to match the specific context value against.|String|Required|
-|Pattern To Match|The RegEx pattern used to match the specific context value against.|String|Required|
 |Context Property To Match|Namespace and value of the context property that the match should execute against. Should be in format 'http://foo.bar#value'.|String|Required|
 |Context Property To Set|Namespace and value of the context property that should be used to the set the value. Should be in format 'http://foo.bar#value'.|String|Required|
 |Value To Set|The value to set if the match is successful.|String|Required|
